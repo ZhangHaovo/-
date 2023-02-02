@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            /* 原来文本框相对于图片的基线对齐，加上vertical-align:middle;相当于文本框相对于图片中间对齐 */
+            vertical-align: middle;
+        }
+
+        .box {
+            width: 600px;
+            height: 600px;
+            background-color: skyblue;
+            line-height: 600px;     /*浏览器处理行内，行内块默认当作文字处理,所以把图片当作文字的处理方式即可*/
+            text-align: center;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <!--垂直对齐方式： 
+            基线：浏览器文字类型元素排版中存在用于对齐的基线（baseline）
+            属性名：vertical-align
+            属性值: (1)baseline:默认，基线对齐
+                    (2)top:顶部对齐
+                    (3)middle:中部对齐
+                    (4)bottom:底部对齐
+            注意点:(1)vertical属性只能加在行内或者行内块标签里面
+                   (2)浏览器处理行内，行内块默认当作文字处理,默认是以基线对齐  -->
+    <!-- 图片居中 -->
+    <div class="box">
+       <img src="../../images/CSS/定位/1.jpg" alt="">
+    </div>               
+
+    <!-- 图片文本框对齐 -->
+    <img src="../../images/CSS/定位/1.jpg" alt="">
+    <input type="text">
+</body>
+</html>

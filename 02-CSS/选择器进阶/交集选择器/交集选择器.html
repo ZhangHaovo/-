@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 交集选择器：同时满足多个选择器的标签
+                结构：选择器1.选择器2 {CSS} */
+        .box{
+            font-size: 700;
+            color: blue;
+        }
+
+        p.box{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="box">这是p标签</p>        <!--将带box的p标签设置成红色，其他不变-->
+    <p>ppp</p>
+    <div class="box">这是div</div>
+</body>
+</html>

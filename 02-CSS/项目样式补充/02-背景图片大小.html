@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 400px;
+            background-repeat: no-repeat;
+            background-color: skyblue;
+            background-image: url(../../images/CSS/项目样式补充/1.jpg);
+
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <!-- 设置背景图片的大小：background-size: 宽度 高度
+            取值:(1)数字+px:操作方便，常用
+                （2）百分比:相当于当前盒子自身的宽高百分比
+                （3）contain:包含，将背景图片等比例缩放，直到不会超出盒子的最大
+                （4）cover:覆盖，将背景图片等比例缩放，直到刚好填满整个盒子没有空白 -->
+    <div class="box"></div>
+</body>
+</html>

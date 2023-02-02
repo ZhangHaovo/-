@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 表格标题和表头单元格:在表格中表示整体大标题和一系列小标题
+            1.标签名：（1）.caption:表格整体大标题，默认在表格整体顶部中位置显示
+                   （2）.th:表头单元格：表示一列小标题，默认内部文字加粗并居中显示
+            2.注意点：（1）.caption标签书写在table标签内部
+                     （2）.th标签书写在tr标签内部（用于替换td标签） -->
+    <table border="1" width="600" height="400"> 
+
+        <caption><strong>学生成绩单</strong></caption>       <!--表格标题-->
+        
+        <tr>
+            <th>姓名</th>       <!--表头-->
+            <th>成绩</th>
+            <th>评语</th>
+        </tr>
+
+        <tr>
+            <td>张三</td>
+            <td>100</td>
+            <td>优</td>
+        </tr>
+
+        <tr>
+            <td>李四</td>
+            <td>80</td>
+            <td>良</td>
+        </tr>
+
+        <tr>
+            <td>王二</td>
+            <td>60</td>
+            <td>差</td>
+        </tr>
+    </table>
+</body>
+</html>

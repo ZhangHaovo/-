@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            display: inline-block;
+            width: 18px;
+            height: 24px;
+            background-color: pink;
+            background-image: url(../../images/CSS/项目样式补充/taobao.png);
+            background-position: -3px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 精灵图：项目中将多张小图片，合成一张大图片，这张大图片就称为精灵图
+            优点：减少服务器的发送次数，减轻服务器的压力，提高页面的加载速度
+            使用步骤:(1)创建一个盒子，设置盒子的尺寸和小图尺寸相同
+                    (2)将精灵图设置为盒子的背景图片(背景图，img显示全部，无法显示想要的部分)
+                    (3)修改背景图的位置(通过PxCook测量小图标左上角坐标，分别取负值设置给盒子的background-position: x y) 
+            注意点：一般精灵图的标签都使用行内标签 span/b/i...-->
+    <span></span>
+</body>
+</html>

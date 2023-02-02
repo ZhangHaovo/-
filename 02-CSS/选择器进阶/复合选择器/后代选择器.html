@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 后代选择器：选择器1 选择器2 {CSS}
+            效果：在选择器1所找到标签的后代中，找到满足选择器2的标签，设置样式
+             */
+    div p {
+        color: red;
+    }
+</style>
+<body>
+    <p>这是p标签</p>
+    <div>
+        <p>这是div的儿子p</p>
+        <div>
+            <p>这是div的孙子p</p>
+        </div>
+    </div>
+</body>
+</html>

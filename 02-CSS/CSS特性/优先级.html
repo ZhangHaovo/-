@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: red;
+        }
+
+        div{
+            color: green !important;        /* !important提高优先级*/
+        }
+
+        .color{
+            color: blue;
+        }
+
+        #color{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS特性：优先级
+            1.特性：不同的选择器具有不同的优先级，优先级高的选择器样式会覆盖优先级低的选择器样式
+            2.优先级公式：继承<通配符选择器<标签选择器<类选择器<id选择器<行内式选择器<!important
+            3.注意: (1)!important写在属性值的后面，分号的前面
+                    (2)!important不能提升继承的优先级，只要是继承优先级就最低
+                    (3)实际开发中不建议使用!important-->
+    <div class="color" id="color" style="color:pink;">测试优先级</div>
+</body>
+</html>

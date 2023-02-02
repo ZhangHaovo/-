@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+
+        .father::before {
+            content: '老鼠';    /*必须添加*/
+            color: aqua;
+            display: block;
+        }
+
+        .father::after {
+            content: '大米';
+        }
+    </style>
+</head>
+<body>
+    <!-- 伪元素：由CSS模拟出的标签效果，一般页面中的非主体内容可以使用伪元素
+            种类:（1）::before 在父类内容的最前添加一个伪元素
+                 （2）::after 在父类内容的最后添加一个伪元素
+            注意点:（1）必须设置content属性才能生效
+                  （2）伪元素默认是行内元素 -->
+    <div class="father">爱</div>
+</body>
+</html>
